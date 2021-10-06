@@ -110,7 +110,8 @@
 
 - *Dummy Variable Creation:* Machine Learning Algorithms cannot work on object type datatypes so for that reason we have created dummies for categorical variables. We created       dummy of age_bracket', 'qualification', 'race', 'sex', 'income_level','marital_status', 'housing_status', 'employment', 'census_msa'etc for better analysis.
 
-- *Splitting the data into train and test:* Split the data into train and test datasets and feed it into our model. Here we have split the data into 80% train and 20% test. The    training and testing dataset consist of 39155 rows and 9789 rows correspondingly with 23 Columns in both datasets. Below is the list of final variables in training and          testing   dataset. The reason for doing so is to understand what would happen if your model is faced with data it has not seen before.
+- *Splitting the data into train and test:* To understand model performance, dividing the dataset into a training set and a test set is a good strategy.
+  Let's split dataset by using function train_test_split(). You need to pass basically 3 parameters features, target, and test_set size. Additionally, you can use random_state     to select records randomly. The reason for doing so is to understand what would happen if your model is faced with data it has not seen before.
 
 
 ### **Model Building :**
@@ -119,12 +120,22 @@ A random forest is a machine learning technique that's used to solve regression 
 
 Since, it has low bias and low variance. It overcome the isuues of overfitting.
 
-  1. Applying Random Forest Algorithm to build a model by using RandomForestClassifier function.
-  2. Predicting y_train and y_test value through the model.
+Let's build the  Classification Model using random forest.
+
+First, import the RandomForestClassifier module and create a RandomForestClassifier object using RandomForestClassifier() function.
+
+Then, fit your model on a train set using fit() module.
+
   3. Applying *hyper parameter tunning* for more accurate and persistent results.
   4. Evaluating metrics parameters such as "Classification Report", "Confusion Matrix", "roc_curve" ,"roc_auc_score".
 
 ### * Training|Validating Model :*
+
+This step is one of the most crucial part of a building a model. After fitting the model, we predict the test datasets i.e unseen data by predict() module. In order to get more accurate and precisie result we use *Hyperparameter-tunning.
+
+It is choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a model argument whose value is set before the learning process begins.
+
+
 
 
 
