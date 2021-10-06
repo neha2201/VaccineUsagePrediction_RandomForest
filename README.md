@@ -102,9 +102,31 @@
    ```
   
   - Outlier Treatment: Since there are no outliers present in the given dataset, I have not performed any outlier treatment.
-    
-  
-    
+
+
+ ### **Feature Enginering :**
+ 
+- Feature engineering is the process of using domain knowledge to extract features (characteristics, properties, attributes) from raw data. A feature is a property shared by      independent units on which analysis or prediction is to be done. Features are used by predictive models and influence results.
+
+- *Dummy Variable Creation:* Machine Learning Algorithms cannot work on object type datatypes so for that reason we have created dummies for categorical variables. We created       dummy of age_bracket', 'qualification', 'race', 'sex', 'income_level','marital_status', 'housing_status', 'employment', 'census_msa'etc for better analysis.
+
+- *Splitting the data into train and test:* Split the data into train and test datasets and feed it into our model. Here we have split the data into 80% train and 20% test. The    training and testing dataset consist of 39155 rows and 9789 rows correspondingly with 23 Columns in both datasets. Below is the list of final variables in training and          testing   dataset. The reason for doing so is to understand what would happen if your model is faced with data it has not seen before.
+
+
+### **Model Building :**
+
+A random forest is a machine learning technique that's used to solve regression and classification problems. It utilizes ensemble learning, which is a technique that combines   many classifiers to provide solutions to complex problems. A random forest algorithm consists of many decision trees.
+
+Since, it has low bias and low variance. It overcome the isuues of overfitting.
+
+  1. Applying Random Forest Algorithm to build a model by using RandomForestClassifier function.
+  2. Predicting y_train and y_test value through the model.
+  3. Applying *hyper parameter tunning* for more accurate and persistent results.
+  4. Evaluating metrics parameters such as "Classification Report", "Confusion Matrix", "roc_curve" ,"roc_auc_score".
+
+### * Training|Validating Model :*
+
+
 
  
       
