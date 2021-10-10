@@ -135,7 +135,24 @@ This step is one of the most crucial part of a building a model. After fitting t
 
 It is choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a model argument whose value is set before the learning process begins.
 
+To get the optimize result of the model, i have used hyper-parameter-tunning, I used GridSearchModule() pacakge in which I fit the model on the listed parameters and then fit the model on top of it. To get the optimized parameters list, I ran -model.best_parameters_ 
+Parameters used in tunning are-
+- n_estimator
+- max_depth
+- max_feature
+- min_sample_split
+- min_leaf_split
 
+
+### * Results and Interpretations :*
+
+Machine learning is basically using data to answer questions. So this is the final step where you get to answer few questions. This is the point where the value of machine learning is realized. Here you can Finally use your model to predict the outcome of what you want.
+This is the final step of machine learning process is prediction. This is the stage where we consider the model to be ready for practical applications.
+
+Using metrics like- accuracy_score,classification_report,confusion_matrix,roc_curve,roc_auc_score etc.
+
+In these model I got accuracy_score for train datasets is- 
+For test datasets is
 
 
 
